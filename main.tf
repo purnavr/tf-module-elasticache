@@ -71,6 +71,6 @@ resource "aws_ssm_parameter" "elasticache_endpoint" {
   value = aws_elasticache_cluster.elasticache.cache_nodes[0].address
 }
 
-output "endpoint" {
-  value = aws_ssm_parameter.elasticache_endpoint.value
-}
+#output "endpoint" {
+#  value = aws_ssm_parameter.elasticache_endpoint.value
+#}
